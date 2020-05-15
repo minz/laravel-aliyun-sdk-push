@@ -1,0 +1,25 @@
+{
+    "name": "minz/laravel-aliyun-sdk-push",
+    "description": "aliyun-aliyun-sdk-push laravel package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "minz",
+            "email": "849178781@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "alibabacloud/sdk": "1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Minz\\Laravel\\Aliyun\\Push\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
