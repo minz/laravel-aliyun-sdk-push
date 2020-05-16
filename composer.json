@@ -19,6 +19,16 @@
             "Minz\\Laravel\\Aliyun\\Push\\": "src"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Minz\\Laravel\\Aliyun\\Push\\AliyunPushServiceProvider"
+            ],
+            "aliases": {
+                "AliyunPush": "Minz\\Laravel\\Aliyun\\Push\\AliyunPushFacade"
+            }
+        }
+    },
     "config": {
         "sort-packages": true
     }

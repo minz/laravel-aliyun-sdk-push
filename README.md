@@ -19,7 +19,7 @@ $ composer require "minz/laravel-aliyun-push" -vvv
 
 ## Configuration
 
-1. After installing the library, register the `Minz\Laravel\Aliyun\Push\AliyunPushServiceProvider::class` in your `config/app.php` file:
+* After installing the library, register the `Minz\Laravel\Aliyun\Push\AliyunPushServiceProvider::class` in your `config/app.php` file:
 
 ```php
 'providers' => [
@@ -27,9 +27,9 @@ $ composer require "minz/laravel-aliyun-push" -vvv
     Minz\Laravel\Aliyun\Push\AliyunPushServiceProvider::class,
 ],
 ```
-
 > Laravel 5.5+ skip
-2. After installing the library, register the `'AliyunPush' => Minz\Laravel\Aliyun\Push\AliyunPushFacade::class,` in your `config/app.php` file:
+
+* After installing the library, register the `'AliyunPush' => Minz\Laravel\Aliyun\Push\AliyunPushFacade::class,` in your `config/app.php` file:
 
 ```php
 'providers' => [
@@ -37,7 +37,8 @@ $ composer require "minz/laravel-aliyun-push" -vvv
     'AliyunPush' => Minz\Laravel\Aliyun\Push\AliyunPushFacade::class,
 ],
 ```
-3. publish config file:
+> Laravel 5.5+ skip
+* publish config file:
 
 ```php
 php artisan vendor:publish --provider="Minz\Laravel\Aliyun\Push\AliyunPushServiceProvider"

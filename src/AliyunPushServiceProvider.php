@@ -3,7 +3,6 @@
 namespace Minz\Laravel\Aliyun\Push;
 
 use Illuminate\Support\ServiceProvider;
-use function foo\func;
 
 class AliyunPushServiceProvider extends ServiceProvider
 {
