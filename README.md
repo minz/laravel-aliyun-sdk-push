@@ -113,10 +113,23 @@ $result = AliyunPush::push("标题", "body", $target, ['k' => 'v'], $pushTime, "
 
 ### 普通模式
 ```php
-use Minz\Laravel\Aliyun\Push\Target\DeviceTarget;
+use Minz\Laravel\Aliyun\Push\Target\TagTarget;
 use Minz\Laravel\Aliyun\Push\AliyunPush;
-
-$target = new DeviceTarget(["xx", "xx", "xx"]);
+//单个tag
+$target = new TagTarget(["男性"]);
+//带有逻辑关系多个tag
+$target = new \Minz\Laravel\Aliyun\Push\Target\TagTarget([
+        "and" => [
+            [
+                "tag" => "男"
+            ],
+            [
+                "or" => [
+                    "tag" => '活跃'
+                ]
+            ]
+        ],
+    ]);
 $pushTime = gmdate('Y-m-d H:i:s', strtotime("+1 minute"));
 $result = (new AliyunPush())->push("标题", "body", $target, ['k' => 'v'], $pushTime, "NOTICE", "subTitle");
 ```

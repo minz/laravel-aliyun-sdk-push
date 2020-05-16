@@ -9,7 +9,7 @@ class AccountTarget implements Target
     protected $targetValue;
     public function __construct(array $targetValue = null)
     {
-        if (!$targetValue || count($targetValue) > 100) {
+        if (!$targetValue || count($targetValue) > 1000) {
             throw new AliyunPushTargetValueWrongException();
         }
         $this->targetValue = $targetValue;
